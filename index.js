@@ -6,7 +6,7 @@ const PORT = process.env.PORT;
 
 if(!PORT) throw Error('Port is not defined!')
 
-app.get('/', (req, res) => {
+app.get('/api', (req, res) => {
   res.send(`Server ${PORT}`);
 })
 
